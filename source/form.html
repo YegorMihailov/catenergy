@@ -32,6 +32,116 @@
       </nav>
     </header>
 
+    <main class="page__main">
+      <section class="program-selection">
+        <h1 class="program-selection__title">Подбор программы</h1>
+        <form action="https://echo.htmlacademy.ru" class="program-selection__form" method="get">
+          <p class="program-selection__subtitle">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+          <div class="program-selection__about-user">
+            <label for="username" class="program-selection__text-label">
+              Имя:*
+              <input class="program-selection__text-input" type="text" name="username" id="username" placeholder="Барсик">
+            </label>
+    
+            <label for="weight" class="program-selection__text-label">
+              Вес (кг):*
+              <input class="program-selection__text-input" type="text" name="weight" id="weight"  placeholder="7">
+            </label>
+    
+            <label for="age" class="program-selection__text-label">
+              Возраст (лет):
+              <input class="program-selection__text-input" type="text" name="age" id="age"  placeholder="7">
+            </label>
+            <!-- add spans like lower -->
+          </div>
+          
+          <div class="program-selection__program">
+            <label class="program-selection__radio-label" for="loss">
+              <input class="program-selection__radio-input" type="radio" value="loss" name="program" id="loss">
+              <span class="program-selection__radio-title">Похудение</span>
+            </label>
+            <label class="program-selection__radio-label" for="gain">
+              <input class="program-selection__radio-input" type="radio" value="gain" name="program" id="gain">
+              <span class="program-selection__radio-title">Набор массы</span>
+            </label>
+            <label class="program-selection__radio-label" for="advice">
+              <input class="program-selection__radio-input" type="radio" value="advice" name="program" id="advice">
+              <span class="program-selection__radio-title">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </div>
+          
+          <div class="program-selection__contacts">
+            <p class="program-selection__contacts-title title">
+              Контактные данные (владельца кота)
+            </p>
+  
+            <label class="program-selection__text-label" for="email">
+              <input class="program-selection__text-input--email" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+            </label>
+  
+            <label class="program-selection__text-label" for="tel">
+              <input class="program-selection__text-input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
+  
+          <div class="program-selection__comment">
+            <p class="program-selection__title title">Комментарий</p>
+            <label for="comment">
+              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+  
+          <div class="program-selection__additional-products">
+            <p class="program-selection__title title">Дополнительно</p>
+            <label class="program-selection__checkbox-label" for="sweetener">
+              <span class="program-selection__additional-item">Сахарозаменитель</span>
+              <input class="program-selection__checkbox-input" name="sweetener" id="sweetener" type="checkbox">
+            </label>
+  
+            <label class="program-selection__checkbox-label" for="water">
+              <span class="program-selection__additional-item">Питьевая вода</span>
+              <input class="program-selection__checkbox-input" name="water" id="water" type="checkbox">
+            </label>
+  
+            <label class="program-selection__checkbox-label" for="milk">
+              <span class="program-selection__additional-item">Молоко</span>
+              <input class="program-selection__checkbox-input" name="milk" id="milk" type="checkbox">
+            </label>
+  
+            <label class="program-selection__checkbox-label" for="vitamins">
+              <span class="program-selection__additional-item">Витамины</span>
+              <input class="program-selection__checkbox-input" name="vitamins" id="vitamins" type="checkbox">
+            </label>
+          </div>
+  
+          <button class="program-selection__button button" type="submit">Отправить заявку</button>
+  
+          <span class="program-selection__required">* — Обязательные поля</span>
+        </form>
+      </section>
+      
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__info">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая 
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+        </div>
+        
+
+        <!-- MAP -->
+        <div class="contacts__map map">
+
+        </div>
+
+      </section>
+    </main>
+
     <footer class="page-footer">
       <a href="" class="page-footer__logo-text main-logo">
         <img src="" alt="Кэт Энерджи" width="101" height="18">
